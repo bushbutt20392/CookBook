@@ -1,3 +1,5 @@
+import RecipeCard from "../components/RecipeCard"
+
 function Home() {
     return (
         <div>
@@ -10,18 +12,8 @@ function Home() {
           <section>
               <h2> Popular Recipes</h2>
               <p>Explore some of our most popular Recipes.</p>
-              <div>
-                <h3>Chicken Biryani</h3>
-                <p>Delicious Pakistani rice dish.</p>
-              </div>
-               <div>
-                <h3>Pasta</h3>
-                 <p>Creamy and tasty pasta.</p>
-              </div>
-               <div>
-                <h3>Chocolate Cake</h3>
-                <p>Soft and delicious chocolate cake.</p>
-              </div>
+            
+               <RecipeCard />              
         </section>
 
            <section>
@@ -63,7 +55,7 @@ function Home() {
                 <p>Simple recipe that are easy to follow.</p>
               </div>
                 <div>
-                <h3>Cokking Tips</h3>
+                <h3>Cooking Tips</h3>
                 <p>Useful tips to make your cooking better.</p>
               </div>
                 <div>
