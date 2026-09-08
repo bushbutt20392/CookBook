@@ -1,4 +1,4 @@
-function RecipeCard({name , description }){
+function CategoryCard({name , description}) {
     return(
         <div>
             <h3>{name}</h3>
@@ -6,5 +6,4 @@ function RecipeCard({name , description }){
         </div>
     )
 }
-
-export default RecipeCard
+export default CategoryCard

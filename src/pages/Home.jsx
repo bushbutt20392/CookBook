@@ -1,79 +1,56 @@
 import RecipeCard from "../components/RecipeCard"
+import CategoryCard from "../components/CategoryCard"
+import FeaturedRecipe from "../components/FeaturedRecipe"
+import WhyCookBook from "../components/whyCookBook"
+import Newsletter from "../components/Newsletter"
 
 function Home() {
     return (
         <div>
-        <section>
+        <section className="hero">
               <h1> Welcome to CookBook</h1>
               <p>Discover delicious and easy recipes for everyone.</p>
               <button> Explore Recipes</button>
         </section>
 
-          <section>
+          <section className="pop-recipes">
               <h2> Popular Recipes</h2>
               <p>Explore some of our most popular Recipes.</p>
-            
-               <RecipeCard />              
+
+              <div className="recipe-list">
+               <RecipeCard name="Chicken Biryani"   description="Delicious Pakistani rice dish."/>
+               <RecipeCard name="Pasta"   description="Creamy and tasty pasta."/>
+               <RecipeCard name="Chocolate cake"   description="Soft and delicious chocolte cake."/>
+               </div>              
         </section>
 
-           <section>
+           <section className="categories"> 
               <h2> Categories</h2>
               <p>Browse recipes by category.</p>
-
-              <div>
-                <h3>Chicken</h3>
-                <p>Delicious chicken recipes.</p>
-              </div>
-               <div>
-                <h3>Pasta</h3>
-                <p>Delicious pasta recipes.</p>
-              </div>
-               <div>
-                <h3>Salad</h3>
-                <p>Fresh and healthy salad recipes.</p>
-              </div>
-               <div>
-                <h3>Dessert</h3>
-                <p>Sweet and delicious dessert recipes.</p>
+              <div className="category-list">
+              <CategoryCard name="Chicken"    description="Delicious chicken recipes." />
+              <CategoryCard name="Pasta"     description="Delicious Pasta recipes." />
+              <CategoryCard name="Salad"     description="Fresh and healthy salad recipes." />
+              <CategoryCard name="Dessert"   description=" Sweet and Delicious dessert recipes."/>
               </div>
         </section>
 
-          <section>
-              <h2> Featured Recipe</h2>
+          <section className="featured-recipe">
+            <h2> Featured Recipe</h2>
               <p>Try our special recipe of the day.</p>
-               <div>
-                <h3>Chicken Biryani</h3>
-                <p>A delicious and flavorful recipe you must try.😋🍴</p>
-              </div>
+              <FeaturedRecipe />
         </section>
 
-          <section>
+          <section className="why-book">
               <h2> Why CookBook</h2>
               <p>Discover  why CookBook is a great place for food lovers.</p>
-                <div>
-                <h3>Easy Recipes</h3>
-                <p>Simple recipe that are easy to follow.</p>
-              </div>
-                <div>
-                <h3>Cooking Tips</h3>
-                <p>Useful tips to make your cooking better.</p>
-              </div>
-                <div>
-                <h3>New Ideas</h3>
-                <p>Find new and delicious meal ideas.</p>
-              </div>
+              <WhyCookBook />
         </section>
 
-          <section>
+          <section className="newsletter">
               <h2> Newsletters</h2>
               <p>Subscribe to get new recipes and cooking ideas.</p>
-              <div>
-                <input type="email" placeholder="Enter your email" />
-
-                <button>
-                    Subscribe
-                </button>
-              </div>
+              <Newsletter />
         </section>
         </div>
     )
