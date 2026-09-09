@@ -175,3 +175,128 @@ footer{
     margin-bottom: 20px;
     margin-top: 0;
 }
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 20px 50px;
+    background-color: #f5f5f5;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+@media (max-width:768px){
+    nav{
+        padding: 12px 15px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    nav a{
+        font-size: 16px;
+    }
+}
+.recipe-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+.recipe-card{
+    width: 250px;
+}
+.recipe-card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.recipes-page h1{
+    text-align: center;
+    font-size: 40px;
+    margin: 30px 0;
+    font-weight: 789;
+    letter-spacing: 1px;
+    text-decoration: underline;
+}
+
+@media ( max-width:768px){
+  .recipe-container{
+    padding: 20px;
+    gap: 15px;
+  }
+  .recipe-card{
+    width: 220px;
+  }
+  .recipe-card img{
+    height: 160px;
+  }
+  .recipes-page h1{
+       font-size: 32px;
+  }
+}
+
+.recipe-details{
+    padding: 30px;
+    text-align: center;
+}
+.recipe-details h1{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.details-card{
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    text-align: left;
+}
+.details-card img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.details-card h2{
+    font-size: 30px;
+    margin: 20px 0;
+}
+.details-card h3{
+    font-size: 22px;
+    margin-top: 25px;
+}
+.details-card ul{
+    padding-left: 30px;
+}
+.details-card li{
+    margin-bottom: 8px;
+}
+.details-card p{
+    line-height: 1.7;
+}
+@media (max-width:768px){
+    .recipe-details{
+        padding: 20px 15px;
+    }
+    .recipe-details h1{
+        font-size: 32px;
+    }
+    .details-card{
+        padding: 18px;
+    }
+    .details-card img{
+        height: 220px;
+    }
+    .details-card h2{
+        font-size: 20px;
+    }
+    .details-card h3{
+        font-size: 17px;
+    }
+    .details-card p{
+        font-size: 15px;
+    }
+}

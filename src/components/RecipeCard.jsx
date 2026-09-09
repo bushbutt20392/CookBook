@@ -1,10 +1,22 @@
-function RecipeCard({name , description }){
+import {Link} from "react-router-dom"
+
+function RecipeCard({recipe ,name ,description }) {
+    if (recipe) {
     return(
-        <div>
-            <h3>{name}</h3>
-            <p>{description}</p>
-        </div>
+        <Link to={`/recipes/${recipe.id}`}  className="recipe-card">
+            <img src={recipe.image}
+         alt={recipe.name} />
+         <h2>{recipe.name}</h2>
+       </Link>
     )
+}
+
+return(
+    <div className="recipe-card">
+        <h2>{name}</h2>
+        <p>{description}</p>
+    </div>
+  )
 }
 
 export default RecipeCard
