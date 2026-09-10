@@ -1,13 +1,18 @@
 import {Link} from "react-router-dom"
 
-function RecipeCard({recipe ,name ,description }) {
+function RecipeCard({recipe ,name ,description , addToFavourite, favourites}) {
     if (recipe) {
+
+        const isFavourite = favourites?.some((item) => item.id === recipe.id)
     return(
-        <Link to={`/recipes/${recipe.id}`}  className="recipe-card">
+        <div className="recipe-card">
+        <Link to={`/recipes/${recipe.id}`} >
             <img src={recipe.image}
          alt={recipe.name} />
          <h2>{recipe.name}</h2>
        </Link>
+       <button onClick={() => addToFavourite(recipe)}>{isFavourite? "❤️ Favourite" : "♡ Add to Favourite"}</button>
+       </div>
     )
 }
 

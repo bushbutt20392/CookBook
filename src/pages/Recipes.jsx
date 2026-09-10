@@ -1,7 +1,7 @@
 import { useState , useEffect } from "react"
 import RecipeCard from "../components/RecipeCard";
 
-function Recipes() {
+function Recipes({ addToFavourite,favourites }) {
     const [recipes , SetRecipes] = useState([]);
 
     useEffect(() => {
@@ -17,11 +17,11 @@ function Recipes() {
                 {recipes.map((recipe) => (
                    <RecipeCard 
                    key={recipe.id} 
-                   recipe={recipe} /> 
+                   recipe={recipe}
+                   addToFavourite={addToFavourite}
+                   favourites={favourites} /> 
                 ))}
             </div>
-        
-
         </div>
     )
 }
