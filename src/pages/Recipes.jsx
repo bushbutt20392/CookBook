@@ -12,8 +12,13 @@ function Recipes({ addToFavourite,favourites }) {
 
     return (
         <div className="recipes-page">
-            <h1>Recipes</h1>
-            <div className="recipe-container">
+            <section className="recipes-hero">
+                <h1>Discover Delicious Recipes</h1>
+                <p>Explore a variety of tasty recipes for every occasion.</p>
+            </section>
+            <section className="all-recipes">
+                <h2>All Recipes</h2>
+                  <div className="recipe-container">
                 {recipes.map((recipe) => (
                    <RecipeCard 
                    key={recipe.id} 
@@ -22,6 +27,21 @@ function Recipes({ addToFavourite,favourites }) {
                    favourites={favourites} /> 
                 ))}
             </div>
+            </section>
+             <section className="cooking-inspiration">
+                <h2>Cooking Inspiration</h2>
+                <p>Find new ideas and discover recioes you will love to cook.</p>
+             </section>
+             <section className="quick-recipes">
+                <h2>Quick and Easy Recipes </h2>
+                <p>Simple and delicious recipes for busy days.</p>
+             </section>
+
+             <section className="recipes-cta">
+                <h2>ready to cook?</h2>
+                <p>Choose a recipe and start cooking something delicious.</p>
+             </section>
+          
         </div>
     )
 }

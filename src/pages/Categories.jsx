@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import categoryCard from "../components/CategoryCard"
 
 function Categories() {
@@ -58,7 +59,7 @@ function Categories() {
             <section className="category-cta">
                 <h2>Ready to Cook?</h2>
                 <p>Explore our recipes and find something delicous to make today.</p>
-                <button>Explore Recipes</button>
+                 <Link to="/recipes" className="explore-button">Explore Recipes</Link>
             </section>
         </div>
     )

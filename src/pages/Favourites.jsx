@@ -1,3 +1,5 @@
+
+import { Link } from "react-router-dom"
 function Favourites({favourites}) {
     return(
         <div className="favourites-page">
@@ -16,6 +18,7 @@ function Favourites({favourites}) {
                         alt={recipe.name}/>
                         <h3>{recipe.name}</h3>
                         <p>{recipe.cuisine}</p>
+                        <Link to={`/recipes/${recipe.id}`}  className="view-recipe">View Recipe</Link>
                     </div>
                     ))
                 )}
@@ -49,7 +52,7 @@ function Favourites({favourites}) {
             <section className="favourites-cta">
                 <h2>Discover More Recipes</h2>
                 <p>Find something new and delicious to add to your favourites.</p>
-                <button>Explore Recipes</button>
+                <Link to="/recipes" className="explore-button">Explore Recipes</Link>
             </section>
         </div>
     )

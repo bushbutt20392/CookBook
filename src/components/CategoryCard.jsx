@@ -1,6 +1,7 @@
-function CategoryCard({name , description}) {
+function CategoryCard({name , description ,image}) {
     return(
-        <div>
+        <div className="category-card">
+            <img src={image}  alt={name} />
             <h3>{name}</h3>
             <p>{description}</p>
         </div>
