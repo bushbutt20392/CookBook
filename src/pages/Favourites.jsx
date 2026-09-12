@@ -29,12 +29,15 @@ function Favourites({favourites}) {
                 <p>Explore the types of recipes you enjoy most.</p>
                 <div className="favourite-category-list">
                     <div className="favourite-category">
+                        <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b" alt="Chicken"/>
                         <h3>Chicken</h3>
                     </div>
                      <div className="favourite-category">
+                        <img  src="https://images.unsplash.com/photo-1551183053-bf91a1d81141" alt="Pasta"/>
                         <h3>Pasta</h3>
                     </div>
                      <div className="favourite-category">
+                        <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307"  alt="Dessert" />
                         <h3>Dessert</h3>
                     </div>
                 </div>

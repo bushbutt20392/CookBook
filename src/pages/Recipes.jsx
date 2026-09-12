@@ -24,7 +24,8 @@ function Recipes({ addToFavourite,favourites }) {
                    key={recipe.id} 
                    recipe={recipe}
                    addToFavourite={addToFavourite}
-                   favourites={favourites} /> 
+                   favourites={favourites}
+                   page="all" /> 
                 ))}
             </div>
             </section>
